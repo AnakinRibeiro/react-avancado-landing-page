@@ -4,6 +4,7 @@ import { GrGithub } from 'react-icons/gr'
 import { FaDribbble, FaTwitter } from 'react-icons/fa'
 
 import * as S from './styles'
+import { SocialLink } from 'types/api'
 
 const icons = {
   twitter: <FaTwitter />,
@@ -11,16 +12,11 @@ const icons = {
   dribbble: <FaDribbble />
 }
 
-type socialLinks = {
-  slug: string
-  link: string
-}
-
 type Props = {
   name: string
   role: string
   image: string
-  socialLinks: socialLinks[]
+  socialLinks: SocialLink[]
   description: string
 }
 
